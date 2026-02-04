@@ -1,62 +1,50 @@
-//***1***
-//let name = "Ivan";
-//let city = "Kyiv";
-//city = name;
-//console.log(name);
+//-1--//
 
-//****2****
-//let name = "Olga";
-//console.log(`привіт ${1}`);
-//console.log(`привіт ${"name"}`);
-//console.log(`привіт ${name}`);
-
-//***3***
-//let a = "5";
-//let b = "13cvb";
-//let c = "12.9sxdcfgv";
+//function checkAge(age) {
+//  if (age > 18) {
+//    return true;
+//  } else {
+//    return confirm("Батьки дозволили?");
+//  }
 //
-//console.log(typeof Number(a));
-//console.log(typeof parseInt(b));
-//console.log(typeof parseFloat(c));
-
-//***4***
-//console.log((0.1 * 10 + 0.2 * 10) / 10);
-
-//***5** */
-//console.log(Math.max(20, 10, 50, 40));
-
-//***6** */
-//console.log(Math.random() * (4 - 2) + 2);
-
-//**7**
-//const message = "Welcom to Bahamas";
-//console.log(message.length); //17;
-
-//**8**
-//console.log(message.toUpperCase());
-
-//** 9 **
-//let user = {};
-//user.name = "Olga";
-//user.age = 23;
-//user.city = "Kyiv";
-//console.log(user);
-//delete user.city;
-//user["like flowers"] = true;
-//console.log(user);
-
-//**10**
-
-//for (key in user) {
-//  console.log(key);
-//  console.log(user[key]);
+//function checkAge(age) {
+//  return age > 18 ? true : confirm("Батьки дозволили?");
+//
+//function checkAge(age) {
+//  return age > 18 || confirm("Батьки дозволили?");
 //}
+//checkAge(17)//
 
-//Lesson 2
+//-2-//
 
-//let value = "0";
-//console.log(0 <=
+//function min(a, b) {
+//  return a < b ? a : b;
+//
+//console.log(min(3, 7))//
+//console.log(min(10, 5))//
 
-//const message = "JavaScript is awesome!";
-//alert(message);
-//console.log(message);
+//-3-//
+
+//function ask(question, yes, no) {
+//  if (confirm(question)) yes();
+//  else no();
+//}
+//ask(
+//"Ви згодні?",
+//   function () {
+//       alert("Ви погодились.");
+//   },
+//   function () {
+//       alert("Ви скасували виконання.");
+//   },
+//
+//const ask = (question, yes, no) => {
+//  if (confirm(question)) yes();
+//  else no();
+//};
+
+//ask(
+//  "Ви згодні?",
+//  () => alert("Ви погодились."),
+//  () => alert("Ви скасували виконання."),
+//);
